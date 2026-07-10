@@ -11,7 +11,7 @@ export default function Profile() {
 
     return (
         <>
-            <div className="md:absolute md:left-50 flex flex-col items-center justify-center xl:justify-start w-75 xl:w-80 h-full">
+            <div className="md:absolute md:left-50 flex flex-col items-center justify-center xl:justify-start w-full xl:w-80 h-auto xl:h-full">
                 <div className="xl:sticky flex items-center justify-center top-10 w-full h-125">
                     <div className="md:absolute w-full h-full md:left-1/2 md:-translate-x-1/2 flex flex-col items-start justify-between p-0 rounded-[3rem] bg-[#dde3e6]
                     ring-[5px] ring-white">

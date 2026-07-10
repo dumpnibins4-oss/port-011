@@ -5,7 +5,7 @@ function App() {
 
   return (
     <>
-      <div className='flex flex-col items-start justify-start w-full min-h-screen font-poppins'>
+      <div className='flex h-screen w-full flex-col items-start justify-start overflow-x-hidden overflow-y-auto font-poppins'>
         <Landing />
       </div>
     </>

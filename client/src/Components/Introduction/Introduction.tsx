@@ -14,7 +14,7 @@ export default function Introduction() {
         <div className="flex flex-col items-center xl:items-start justify-start w-full h-auto gap-10 xl:gap-15">
             {/* Introduction */}
             <div className="flex flex-col items-center xl:items-start justify-start w-full h-auto gap-4">
-                <h1 className="font-poppins tracking-tight text-center xl:text-start text-[47px] xl:text-[105px] leading-none text-white font-extrabold">SOFTWARE<br/><span className="text-neutral-800">ENGINEER</span></h1>
+                <h1 className="font-poppins tracking-tight text-center xl:text-start text-[40px] xl:text-[80px] leading-none text-white font-extrabold">SOFTWARE<br/><span className="text-neutral-800">ENGINEER</span></h1>
                 <p className="text-neutral-500 text-center xl:text-start leading-snug xl:text-[17px] font-semibold">I build beautifully crafted products that prioritize the end user. From architecting the database to polishing the UI, my focus is on transforming complex requirements into engaging, intuitive, and highly functional digital experiences.</p>
             </div>
             {/* Career Information */}
@@ -26,14 +26,14 @@ export default function Introduction() {
                     </div>
                 ))}
             </div>
-            <div className="flex flex-col xl:flex-row items-center justify-between w-full h-45 xl:h-15 p-5 gap-2 xl:gap-5 bg-purple-300 rounded-xl">
+            <div className="flex flex-col xl:flex-row items-center justify-between w-full h-45 xl:h-15 p-5 gap-2 xl:gap-5 bg-white rounded-xl">
                 <div className="flex flex-col xl:flex-row items-start xl:items-center justify-start gap-2 xl:gap-5">
                     <img src={layersIcon} alt="Apps" className="h-8 w-auto" draggable={false} />
-                    <h2 className="text-lg font-medium">React, TailwindCSS, Node.js, Express, PostgreSQL</h2>
+                    <h2 className="text-lg font-medium">Custom Applications | React | Next.js | Tailwind CSS | Bootstrap</h2>
                 </div>
-                <button className="h-10 xl:h-8 w-full xl:w-8 border-2 xl:rounded-lg p-1 hover:bg-white/50 hover:scale-105 transition-all duration-200 bg-white xl:bg-transparent">
+                <button className="h-10 xl:h-8 w-full xl:w-8 border-2 xl:rounded-lg p-1 hover:bg-white/50 hover:scale-105 transition-all duration-200 bg-black xl:bg-transparent">
                     <img src={rightIcon} alt="Apps" className="hidden xl:block h-full w-auto" draggable={false} />
-                    <p className="text-md xl:hidden block">View Portfolio</p>
+                    <p className="text-md xl:hidden block text-white">View Portfolio</p>
                 </button>
             </div>
         </div>
