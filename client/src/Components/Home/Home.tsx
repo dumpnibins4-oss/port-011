@@ -5,7 +5,7 @@ import RecentProjects from "@/Components/RecentProjects/RecentProjects"
 export default function Home() {
     
     return (
-        <div className="relative flex flex-col md:flex-row items-center xl:items-start justify-center xl:justify-end w-full h-auto xl:px-50 xl:gap-0 gap-15 px-5">
+        <div className="relative flex flex-col xl:flex-row items-center xl:items-start justify-center xl:justify-end w-full h-auto lg:px-20 xl:px-50 xl:gap-0 gap-15 px-5">
             <Profile />
 
             <div className="flex min-h-0 flex-col items-center xl:items-start justify-start w-full xl:w-173 gap-15 xl:gap-25 mb-10">
