@@ -11,8 +11,9 @@ export default function Profile() {
 
     return (
         <>
-            <div className="xl:absolute xl:left-50 flex flex-col items-center justify-center xl:justify-start w-full xl:w-80 h-auto xl:h-full px-3 xl:px-0">
-                <div className="xl:sticky flex items-center justify-center top-10 w-full xl:h-125 md:h-auto">
+            {/* <div className="xl:absolute xl:left-50 flex flex-col items-center justify-center xl:justify-start w-full xl:w-80 h-auto xl:h-full px-3 xl:px-0"> */}
+            <div className="flex flex-col items-center xl:items-end justify-center xl:justify-start w-full h-auto xl:h-full px-3 xl:px-0">
+                <div className="xl:sticky flex items-center justify-center top-10 w-full xl:w-80 xl:h-125 md:h-auto">
                     <div className="xl:absolute w-full md:w-1/2 xl:w-full h-full xl:left-1/2 xl:-translate-x-1/2 flex flex-col items-center xl:items-start justify-between p-0 rounded-[3rem] bg-[#dde3e6] ring-[5px] ring-white gap-2">
                         <div className="flex items-center justify-center rounded-[3rem] overflow-hidden">
                             <img src={profileImage} alt="Profile" className="h-full w-auto" draggable={false} />

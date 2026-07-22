@@ -29,7 +29,7 @@ export default function Introduction() {
             <div className="flex flex-col md:flex-row items-center justify-between w-full xl:w-full md:w-3/4 h-45 md:h-15 p-5 gap-2 md:gap-5 bg-white rounded-xl">
                 <div className="flex flex-col md:flex-row items-start md:items-center justify-start gap-2 md:gap-5">
                     <img src={layersIcon} alt="Apps" className="h-8 w-auto" draggable={false} />
-                    <h2 className="text-lg font-medium">Custom Applications | React | Next.js | Tailwind CSS | Bootstrap</h2>
+                    <h2 className="text-lg font-medium">Custom Applications | React - Next.js - Tailwind</h2>
                 </div>
                 <button className="h-10 md:h-8 w-full md:w-8 border-2 md:rounded-lg p-1 hover:bg-white/50 hover:scale-105 transition-all duration-200 bg-black md:bg-transparent">
                     <img src={rightIcon} alt="Apps" className="hidden md:block h-full w-auto" draggable={false} />
