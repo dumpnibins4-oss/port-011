@@ -15,7 +15,7 @@ export default function RecentProjects() {
         <div className="flex flex-col items-center xl:items-start justify-start w-full h-auto gap-10 md:px-30 xl:px-0 xl:gap-5">
             <h1 className="font-poppins tracking-tight text-center xl:text-start text-[40px] md:text-[70px] xl:text-[80px] leading-none text-white font-extrabold">RECENT<br/><span className="text-neutral-700">PROJECTS</span></h1>
 
-            <div className="flex flex-col w-full h-auto items-start justify-start gap-5">
+            <div className="flex flex-col w-full h-auto items-start justify-start gap-0">
                 { projects.map((project) => (    
                     <a href="" className="flex flex-row w-full xl:h-45 h-35 items-start justify-between bg-transparent xl:p-5 p-3 hover:bg-white/5 hover:scale-102 transition-all duration-300 xl:rounded-xl group border border-zinc-800 rounded-2xl xl:border-0">
                         <div className="flex flex-row items-center justify-start flex-1 h-full gap-5">
