@@ -5,7 +5,10 @@ function App() {
 
   return (
     <>
-      <div className='flex min-h-dvh w-full flex-col items-start justify-start overflow-x-hidden overflow-y-auto font-poppins'>
+      <div
+        className='flex w-full flex-col items-start justify-start overflow-x-hidden overflow-y-auto font-poppins'
+        style={{ minHeight: '100dvh' }}
+      >
         <Landing />
       </div>
     </>
