@@ -1,13 +1,7 @@
-
-
+import projectsData from "./projects.json"
 
 export default function RecentProjects() {
 
-    const projects = [
-        { id: 1, projectImage: "./assets/project-placeholder.png", ProjectName: "Invique", type: "Custom Application",  url: "", restricted: false },
-        { id: 1, projectImage: "./assets/project-placeholder.png", ProjectName: "A.C.T.S.", type: "Custom Internal System",  url: "", restricted: false },
-        { id: 1, projectImage: "./assets/project-placeholder.png", ProjectName: "I.T.M.S.", type: "Custom Internal System",  url: "", restricted: false },
-    ]
     const linkIcon: string = "/icons/link.png"
     const linkIcon2: string = "/icons/link-1.png"
 
@@ -15,9 +9,9 @@ export default function RecentProjects() {
         <div className="flex flex-col items-center xl:items-start justify-start w-full h-auto gap-10 md:px-30 xl:px-0 xl:gap-5">
             <h1 className="font-poppins tracking-tight text-center xl:text-start text-[40px] md:text-[70px] xl:text-[80px] leading-none text-[#dde3e6] font-extrabold">RECENT<br/><span className="text-neutral-700">PROJECTS</span></h1>
 
-            <div className="flex flex-col w-full h-auto items-start justify-start gap-0">
-                { projects.map((project) => (    
-                    <a href="" className="flex flex-row w-full xl:h-45 h-35 items-start justify-between bg-transparent xl:p-5 p-3 hover:bg-white/5 hover:scale-102 transition-all duration-300 xl:rounded-xl group border border-zinc-800 rounded-2xl xl:border-0">
+            <div className="flex flex-col w-full h-auto items-start justify-start xl:gap-0 gap-2">
+                { projectsData.map((project) => (    
+                    <a href="" className="flex flex-row w-full xl:h-45 h-35 items-start justify-between bg-transparent xl:p-5 p-3 hover:bg-white/5 hover:scale-102 transition-all duration-300 xl:rounded-xl group rounded-2xl">
                         <div className="flex flex-row items-center justify-start flex-1 h-full gap-5">
                             <div className="flex flex-row items-start justify-start aspect-square h-full overflow-hidden rounded-2xl">
                                 <img src={project.projectImage} alt="Project" className=" w-full h-full object-cover object-center" draggable={false} />

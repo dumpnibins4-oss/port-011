@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "title": "La Rose Noire, Philippines Inc.",
+    "overview": "Full-Stack Developer Intern managing the end-to-end lifecycle (PHP, JavaScript, MS SQL) of internal software to optimize business operations.",
+    "duration": "February 2026 - May 2026",
+    "url": "",
+    "restricted": false
+  },
+  {
+    "id": 2,
+    "title": "Absolute Service Inc.",
+    "overview": "Conversion Programmer responsible for converting legacy software to modern web applications to improve user experience and streamline business operations.",
+    "duration": "August 2026 - Current",
+    "url": "",
+    "restricted": false
+  }
+]

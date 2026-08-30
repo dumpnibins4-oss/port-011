@@ -1,25 +1,7 @@
-
+import experienceData from "./experience.json"
 
 export default function Experience() {
     const linkArrow: string = "/icons/link-arrow.png"
-    const experience = [
-        {
-            id: 1,
-            title: "La Rose Noire, Philippines Inc.",
-            overview: "Full-Stack Developer Intern managing the end-to-end lifecycle (PHP, JavaScript, MS SQL) of internal software to optimize business operations.",
-            duration: "February 2026 - May 2026",
-            url: "",
-            restricted: false
-        },
-        {
-            id: 2,
-            title: "Absolute Service Inc.",
-            overview: "Conversion Programmer responsible for converting legacy software to modern web applications to improve user experience and streamline business operations.",
-            duration: "August 2026 - Current",
-            url: "",
-            restricted: false
-        },
-    ]
 
     return (
         <div className="flex flex-col items-center xl:items-start justify-start w-full h-auto gap-10 md:px-30 xl:gap-5 px-2 xl:px-0">
@@ -30,7 +12,7 @@ export default function Experience() {
 
             <div className="flex flex-col items-start justify-start w-full h-auto gap-10 xl:gap-0">
             {/* Experience Mapping */}
-                { experience.toReversed().map((exp) => 
+                { experienceData.toReversed().map((exp) => 
                     <a className="flex flex-row items-start justify-between w-full h-auto xl:h-47 xl:p-5 hover:bg-white/5 hover:scale-101 cursor-pointer transition duration-200 rounded-2xl group gap-4">
                         <div className="flex flex-col w-full xl:w-4/5 h-full items-start justify-between gap-3">
                             <h2 className="text-white text-xl font-bold">{exp.title}</h2>

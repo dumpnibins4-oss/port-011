@@ -25,3 +25,34 @@ html, body {
   font-optical-sizing: auto;
   font-style: normal;
 }
+
+@keyframes hero-star-shower {
+  0% {
+    transform: translate3d(0, 0, 0) rotate(-35deg) scale(0.6);
+    opacity: 0;
+  }
+  8% {
+    opacity: var(--star-opacity, 0.6);
+  }
+  92% {
+    opacity: var(--star-opacity, 0.6);
+  }
+  100% {
+    transform: translate3d(-95vw, 75vh, 0) rotate(-35deg) scale(1);
+    opacity: 0;
+  }
+}
+
+.hero-star {
+  animation: hero-star-shower var(--star-duration, 4s) linear infinite;
+  animation-delay: var(--star-delay, 0s);
+  animation-fill-mode: backwards;
+  will-change: transform, opacity;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-star {
+    animation: none;
+    opacity: 0.2;
+  }
+}

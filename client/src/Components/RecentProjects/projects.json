@@ -1,0 +1,7 @@
+
+
+[
+    { "id": 1, "projectImage": "./assets/project-placeholder.png", "ProjectName": "Invique", "type": "Custom Application",  "url": "", "restricted": false },
+    { "id": 1, "projectImage": "./assets/project-placeholder.png", "ProjectName": "A.C.T.S.", "type": "Custom Internal System",  "url": "", "restricted": false },
+    { "id": 1, "projectImage": "./assets/project-placeholder.png", "ProjectName": "I.T.M.S.", "type": "Custom Internal System",  "url": "", "restricted": false }
+]
