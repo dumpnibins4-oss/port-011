@@ -13,7 +13,7 @@ export default function RecentProjects() {
 
     return(
         <div className="flex flex-col items-center xl:items-start justify-start w-full h-auto gap-10 md:px-30 xl:px-0 xl:gap-5">
-            <h1 className="font-poppins tracking-tight text-center xl:text-start text-[40px] md:text-[70px] xl:text-[80px] leading-none text-white font-extrabold">RECENT<br/><span className="text-neutral-700">PROJECTS</span></h1>
+            <h1 className="font-poppins tracking-tight text-center xl:text-start text-[40px] md:text-[70px] xl:text-[80px] leading-none text-[#dde3e6] font-extrabold">RECENT<br/><span className="text-neutral-700">PROJECTS</span></h1>
 
             <div className="flex flex-col w-full h-auto items-start justify-start gap-0">
                 { projects.map((project) => (    

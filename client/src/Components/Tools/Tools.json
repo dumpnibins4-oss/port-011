@@ -1,0 +1,66 @@
+
+    [
+        {
+            "imgPath": "/icons/react.png",
+            "title": "React.js",
+            "description": "JavaScript Library",
+            "url": "#",
+            "restricted": false
+        },
+        {
+            "imgPath": "/icons/javascript.png",
+            "title": "JavaScript",
+            "description": "Scripting Language",
+            "url": "#",
+            "restricted": false
+        },
+        {
+            "imgPath": "/icons/typescript.png",
+            "title": "TypeScript",
+            "description": "Typed superset of JavaScript",
+            "url": "#",
+            "restricted": false
+        },
+        {
+            "imgPath": "/icons/php.png",
+            "title": "PHP",
+            "description": "Scripting Language",
+            "url": "#",
+            "restricted": false
+        },
+        {
+            "imgPath": "/icons/figma.png",
+            "title": "Figma",
+            "description": "Design Tool",
+            "url": "#",
+            "restricted": false
+        },
+        {
+            "imgPath": "/icons/framer.png",
+            "title": "Framer",
+            "description": "Visual Web Builder",
+            "url": "#",
+            "restricted": false
+        },
+        {
+            "imgPath": "/icons/postgresql.png",
+            "title": "PostgreSQL",
+            "description": "Object-Relational Database",
+            "url": "#",
+            "restricted": false
+        },
+        {
+            "imgPath": "/icons/python.png",
+            "title": "Python",
+            "description": "Scripting Language",
+            "url": "#",
+            "restricted": false
+        },
+        {
+            "imgPath": "/icons/node.png",
+            "title": "Node.js",
+            "description": "JavaScript Runtime Env",
+            "url": "#",
+            "restricted": false
+        }
+    ]

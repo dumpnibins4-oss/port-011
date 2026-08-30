@@ -2,6 +2,7 @@ import Profile from "@/Components/Profile/Profile"
 import Introduction from "@/Components/Introduction/Introduction"
 import RecentProjects from "@/Components/RecentProjects/RecentProjects"
 import Experience from "@/Components/Experience/Experience"
+import Tools from "@/Components/Tools/Tools"
 export default function Home() {
     
     return (
@@ -13,6 +14,7 @@ export default function Home() {
                 <Introduction />
                 <RecentProjects />          
                 <Experience />
+                <Tools />
             </div>
         </div>
     )

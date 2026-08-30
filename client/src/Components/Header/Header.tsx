@@ -5,10 +5,10 @@ import NavButton from "@/Components/Header/Nav-Button"
 export default function Header(): any {
     const headerLinks = [
         { name: "Home", icon: "/icons/home.png" },
-        { name: "About", icon: "/icons/about.png" },
         { name: "Projects", icon: "/icons/folder.png" },
         { name: "Experience", icon: "/icons/briefcase.png" },
         { name: "Tools", icon: "/icons/wrench.png" },
+        { name: "About", icon: "/icons/about.png" },
     ]
 
     return (
