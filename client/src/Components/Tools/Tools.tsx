@@ -10,7 +10,7 @@ export default function Tools() {
                 </div>
 
                 {/* Tools mapping */}
-                <div className="flex flex-col xl:grid grid-cols-2 w-full h-auto gap-2">
+                <div className="flex flex-col md:grid md:grid-cols-3 xl:grid-cols-2 w-full h-auto gap-2">
                     {toolsData.map((tool) => (
                         <a href="#" className="flex flex-row w-full h-25 gap-5 items-center justify-start py-5 px-2 xl:p-5 rounded-lg hover:bg-neutral-900 transition duration-200 hover:scale-102 cursor-pointer">
                             <div className="flex items-center justify-center aspect-square h-full bg-white rounded-lg overflow-hidden ring-2 ring-white p-3">
