@@ -1,6 +1,20 @@
-import toolsData from "./Tools.json";
+import { useState, useEffect } from "react"
+import toolsData from "./Tools.json"
 
-export default function Tools() {    
+export default function Tools() {
+    const [isMobile, setIsMobile] = useState(false)
+
+    useEffect(() => {
+    const handleResize = () => {
+        setIsMobile(window.innerWidth < 768) // 768px is Tailwind's 'md' breakpoint
+    }
+    
+    handleResize() // Run on initial load
+    window.addEventListener("resize", handleResize)
+    return () => window.removeEventListener("resize", handleResize)
+    }, [])
+
+
     return(
         <>
             <div className="flex flex-col items-center xl:items-start justify-start w-full h-auto gap-10 md:px-30 xl:gap-5 px-2 xl:px-0">
@@ -10,18 +24,24 @@ export default function Tools() {
                 </div>
 
                 {/* Tools mapping */}
-                <div className="flex flex-col md:grid md:grid-cols-3 xl:grid-cols-2 w-full h-auto gap-2">
-                    {toolsData.map((tool) => (
-                        <a href="#" className="flex flex-row w-full h-25 gap-5 items-center justify-start py-5 px-2 xl:p-5 rounded-lg hover:bg-neutral-900 transition duration-200 hover:scale-102 cursor-pointer">
-                            <div className="flex items-center justify-center aspect-square h-full bg-white rounded-lg overflow-hidden ring-2 ring-white p-3">
-                                <img src={tool.imgPath} alt={tool.title} className="w-full h-full object-cover"/>
-                            </div>
-                            <div className="flex flex-col items-start justify-between flex-1 h-full">
-                                <h2 className="text-[25px] text-[#dde3e6] font-bold">{tool.title}</h2>
-                                <p className="text-sm xl:text-[16px] text-[#a0a0a0]">{tool.description}</p>
-                            </div>
-                        </a>
-                    ))}
+                <div className="flex flex-col items-center justify-start w-full h-auto gap-2">
+                    <div className="flex flex-col md:grid md:grid-cols-3 xl:grid-cols-2 w-full h-auto gap-2">
+                        {toolsData.slice(0, isMobile ? 3 : 6).map((tool, index) => (
+                            <a key={index} href="#" className="flex flex-row w-full h-25 gap-5 items-center justify-start py-5 px-2 xl:p-5 rounded-lg hover:bg-neutral-900 transition duration-200 hover:scale-102 cursor-pointer">
+                                <div className="flex items-center justify-center aspect-square h-full bg-white rounded-lg overflow-hidden ring-2 ring-white p-3">
+                                    <img src={tool.imgPath} alt={tool.title} className="w-full h-full object-cover"/>
+                                </div>
+                                <div className="flex flex-col items-start justify-between flex-1 h-full">
+                                    <h2 className="text-20px lg:text-[25px] text-[#dde3e6] font-bold">{tool.title}</h2>
+                                    <p className="text-sm lg:text-[16px] text-[#a0a0a0]">{tool.description}</p>
+                                </div>
+                            </a>
+                        ))}
+                    </div>
+                    {toolsData.length > 6 ?
+                        <a className="text-neutral-500 text-md font-medium cursor-pointer hover:text-black transition duration-200 w-full text-center border border-neutral-500 hover:border-white hover:bg-white">View More</a>
+                        : null
+                    }
                 </div>
             </div>
         </>

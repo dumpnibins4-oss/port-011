@@ -1,7 +1,10 @@
 import educData from "./educ.json"
+import certsData from "./certs.json"
 
 export default function About() {
     const linkIcon: string = "/icons/link-arrow.png"
+
+    
     
     return(
         <>
@@ -36,6 +39,27 @@ export default function About() {
                                 </a>
                             ))}
                         </div>
+                    </div>
+
+                    {/* Certifications */}
+                    <div className="flex flex-col items-start justify-start w-full h-auto gap-4">
+                        <div className="flex flex-row items-center justify-center w-full h-auto">
+                            <h2 className="text-white text-2xl font-bold">Certifications</h2>
+                        </div>
+
+                        {/* Certification mapping */}
+                        { certsData.map((cert) => (
+                            <div className="flex flex-col items-start justify-start w-full h-auto gap-4 xl:gap-2">
+                                <button className="flex flex-col items-center justify-center w-full h-auto gap-2 p-2 rounded-3xl ring-1 ring-neutral-800/30 backdrop-blur-sm bg-neutral-800/20 hover:bg-neutral-800/50 hover:scale-102 transition-all duration-200 cursor-pointer group">
+                                    <div className="flex items-center justify-center w-full h-auto">
+                                        <h2 className="text-sm xl:text-xl text-white font-medium">{cert.title}</h2>
+                                    </div>
+                                    <div className="flex flex-col items-center justify-center w-full h-auto gap-2 overflow-hidden rounded-2xl ring-1 ring-white">
+                                        <img src={cert.image} alt={cert.title} />
+                                    </div>
+                                </button>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </div>
