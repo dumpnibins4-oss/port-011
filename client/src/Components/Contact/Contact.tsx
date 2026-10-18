@@ -167,7 +167,7 @@ export default function Contact() {
                 {/* Form Success Pop-up */}
                 {success && (
                     <div 
-                        className={`fixed left-1/2 -translate-x-1/2 xl:translate-x-0 xl:left-auto md:right-5 px-4 transition-all duration-300 ease-in-out
+                        className={`fixed left-1/2 -translate-x-1/2 xl:translate-x-0 xl:left-auto md:right-5 w-full px-4 transition-all duration-300 ease-in-out
                         ${isSuccessVisible 
                             ? "top-24 xl:top-4 opacity-100 scale-100"
                             : "-top-20 opacity-0 scale-95 pointer-events-none"
