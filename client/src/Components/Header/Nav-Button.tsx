@@ -1,11 +1,12 @@
 
 interface NavButtonProps {
-    linkIcon: string;
-    linkName: string;
+    linkIcon: string
+    linkName: string
+    linkUrl: string
 }
 
-export default function NavButton({ linkIcon, linkName }: NavButtonProps) {
-    const linkRel = "/" + linkName.toLowerCase()
+export default function NavButton({ linkIcon, linkName, linkUrl }: NavButtonProps) {
+    const linkRel = "#" + linkUrl.toLowerCase()
 
     return (
         <>

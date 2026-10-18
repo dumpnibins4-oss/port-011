@@ -4,16 +4,19 @@
     {
         "degree": "Bachelor of Science in Information Technology",
         "school": "Pampanga State University, Lubao",
-        "duration": "2022-2026"
+        "duration": "2022-2026",
+        "url": "https://pampangastateu.edu.ph/"
     },
     {
         "degree": "Senior High School (STEM)",
         "school": "Saint Peter of Verona Academy Inc.",
-        "duration": "2020-2022"
+        "duration": "2020-2022",
+        "url": "https://www.facebook.com/SPVAI1998/"
     },
     {
         "degree": "Junior High School",
         "school": "Saint Peter of Verona Academy Inc.",
-        "duration": "2017-2020"
+        "duration": "2017-2020",
+        "url": "https://www.facebook.com/SPVAI1998/"
     }
 ]

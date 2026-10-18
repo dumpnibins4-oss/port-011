@@ -4,63 +4,63 @@
             "imgPath": "/icons/react.png",
             "title": "React.js",
             "description": "JavaScript Library",
-            "url": "#",
+            "url": "https://react.dev/",
             "restricted": false
         },
         {
             "imgPath": "/icons/javascript.png",
             "title": "JavaScript",
             "description": "Scripting Language",
-            "url": "#",
+            "url": "https://www.javascript.com/",
             "restricted": false
         },
         {
             "imgPath": "/icons/typescript.png",
             "title": "TypeScript",
             "description": "Scripting Language",
-            "url": "#",
+            "url": "https://www.typescriptlang.org/",
             "restricted": false
         },
         {
             "imgPath": "/icons/php.png",
             "title": "PHP",
             "description": "Scripting Language",
-            "url": "#",
+            "url": "https://www.php.net/",
             "restricted": false
         },
         {
             "imgPath": "/icons/figma.png",
             "title": "Figma",
             "description": "Template Design Tool",
-            "url": "#",
+            "url": "https://www.figma.com/",
             "restricted": false
         },
         {
             "imgPath": "/icons/framer.png",
             "title": "Framer",
             "description": "Visual Web Builder",
-            "url": "#",
+            "url": "https://www.framer.com/",
             "restricted": false
         },
         {
             "imgPath": "/icons/postgresql.png",
             "title": "PostgreSQL",
             "description": "Object-Relational Database",
-            "url": "#",
+            "url": "https://www.postgresql.org/",
             "restricted": false
         },
         {
             "imgPath": "/icons/python.png",
             "title": "Python",
             "description": "Scripting Language",
-            "url": "#",
+            "url": "https://www.python.org/",
             "restricted": false
         },
         {
             "imgPath": "/icons/node.png",
             "title": "Node.js",
             "description": "JavaScript Runtime Env",
-            "url": "#",
+            "url": "https://nodejs.org/en",
             "restricted": false
         }
     ]

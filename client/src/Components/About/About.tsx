@@ -4,18 +4,16 @@ import certsData from "./certs.json"
 export default function About() {
     const linkIcon: string = "/icons/link-arrow.png"
 
-    
-    
     return(
         <>
-            <div className="flex flex-col items-center xl:items-start justify-start w-full h-auto gap-10 md:px-30 xl:gap-5 px-2 xl:px-0">
+            <div id="about" className="flex flex-col items-center xl:items-start justify-start w-full h-auto gap-10 md:px-30 xl:gap-5 px-2 xl:px-0">
                 {/* Header */}
                 <div className="flex flex-col items-center xl:items-start justify-start w-full h-auto gap-4 md:px-50 xl:px-0">
-                    <h1 className="font-poppins tracking-tight text-center xl:text-start text-[40px] md:text-[70px] xl:text-[80px] leading-none text-[#dde3e6] font-extrabold">PROFESSIONAL<br/><span className="text-neutral-700">CREDENTIALS</span></h1>
+                    <h1 className="font-poppins tracking-tight text-center xl:text-start text-[40px] md:text-[70px] xl:text-[80px] leading-none text-[#dde3e6] font-extrabold">ABOUT<br/><span className="text-neutral-700">ME</span></h1>
                 </div>
 
                 {/* Educational Information */}
-                <div className="flex flex-col w-full h-auto gap-2 items-start justify-start">
+                <div className="flex flex-col w-full h-auto gap-10 items-start justify-start">
                     <div className="flex flex-col items-start justify-start w-full h-auto gap-4">
                         <div className="flex flex-row items-center justify-center w-full h-auto">
                             <h2 className="text-white text-2xl font-bold">Educational Attainment</h2>
@@ -23,8 +21,8 @@ export default function About() {
 
                         {/* Educational Background mapping */}
                         <div className="flex flex-col items-start justify-start w-full h-auto gap-4 xl:gap-2">
-                            { educData.map((educ) => (
-                                <a className="flex flex-row items-start justify-start w-full h-auto gap-2 p-0 xl:p-3 rounded-lg backdrop-blur-sm hover:bg-neutral-800/50 hover:scale-102 transition-all duration-200 cursor-pointer group">
+                            { educData.map((educ, index) => (
+                                <a href={educ.url} target="_blank" key={index} className="flex flex-row items-start justify-start w-full h-auto gap-2 p-0 xl:p-3 rounded-lg backdrop-blur-sm hover:bg-neutral-800/50 hover:scale-102 transition-all duration-200 cursor-pointer group">
                                     <div className="flex flex-col items-start justify-start w-full h-auto gap-2">
                                         <h2 className="text-white text-md font-medium xl:text-lg xl:font-bold">{educ.degree}</h2>
                                         <div className="flex flex-row items-center justify-start w-full h-auto gap-2">
@@ -47,19 +45,22 @@ export default function About() {
                             <h2 className="text-white text-2xl font-bold">Certifications</h2>
                         </div>
 
-                        {/* Certification mapping */}
-                        { certsData.map((cert) => (
-                            <div className="flex flex-col items-start justify-start w-full h-auto gap-4 xl:gap-2">
-                                <button className="flex flex-col items-center justify-center w-full h-auto gap-2 p-2 rounded-3xl ring-1 ring-neutral-800/30 backdrop-blur-sm bg-neutral-800/20 hover:bg-neutral-800/50 hover:scale-102 transition-all duration-200 cursor-pointer group">
-                                    <div className="flex items-center justify-center w-full h-auto">
-                                        <h2 className="text-sm xl:text-xl text-white font-medium">{cert.title}</h2>
-                                    </div>
-                                    <div className="flex flex-col items-center justify-center w-full h-auto gap-2 overflow-hidden rounded-2xl ring-1 ring-white">
-                                        <img src={cert.image} alt={cert.title} />
-                                    </div>
-                                </button>
-                            </div>
-                        ))}
+                        <div className="flex flex-col items-center justify-start w-full h-auto md:grid md:grid-cols-2 gap-4">
+                            {/* Certification mapping */}
+                            { certsData.map((cert, index) => (
+                                <div key={index} className="flex flex-col items-start justify-start w-full h-auto gap-4 xl:gap-2">
+                                    <a href={cert.link} target="_blank" className="flex flex-col items-center justify-center w-full h-auto gap-2 p-2 rounded-3xl ring-1 ring-neutral-800/30 backdrop-blur-sm bg-neutral-800/20 hover:bg-neutral-800/50 hover:scale-102 transition-all duration-200 cursor-pointer group">
+                                        <div className="flex items-center justify-center w-full h-auto">
+                                            <h2 className="text-sm xl:text-md text-white font-medium">{cert.title}</h2>
+                                        </div>
+                                        <div className="flex flex-col items-center justify-center w-full h-auto gap-2 overflow-hidden rounded-2xl ring-1 ring-white">
+                                            <img src={cert.image} alt={cert.title} />
+                                        </div>
+                                    </a>
+                                </div>
+                            ))}
+                        </div>
+
                     </div>
                 </div>
             </div>
