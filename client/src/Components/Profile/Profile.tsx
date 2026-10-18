@@ -32,12 +32,12 @@ export default function Profile() {
                                 </a>
                             ))}
                             <div className="h-8 w-0 border border-black rounded-full"></div>
-                            <button className="relative w-10 h-10 hover:bg-zinc-500/30 p-2 rounded-md transition-all cursor-pointer group">
+                            <a href="/Resume-new.pdf" download="Vince_Salenga_Resume.pdf" className="relative w-10 h-10 hover:bg-zinc-500/30 p-2 rounded-md transition-all cursor-pointer group">
                                 <img src={"/icons/download.png"} alt="Download Icon" className="w-full h-full" />
                                 <div className="absolute opacity-0 group-hover:opacity-100 flex group-hover:flex-col items-center justify-center top-11 transition-all ease-in-out left-1/2 -translate-x-1/2 -translate-y-2 group-hover:translate-y-0 bg-zinc-800 text-zinc-300 text-xs rounded py-1 px-2 whitespace-nowrap pointer-events-none">
                                     <span className="text-sm text-zinc-300">Download Resume</span>
                                 </div>
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>

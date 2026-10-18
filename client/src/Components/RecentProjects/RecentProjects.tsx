@@ -10,7 +10,7 @@ export default function RecentProjects() {
             <h1 className="font-poppins tracking-tight text-center xl:text-start text-[40px] md:text-[70px] xl:text-[80px] leading-none text-[#dde3e6] font-extrabold">RECENT<br/><span className="text-neutral-700">PROJECTS</span></h1>
 
             <div className="flex flex-col w-full h-auto items-start justify-start xl:gap-0 gap-2">
-                { projectsData.map((project, index) => (    
+                { projectsData.map((project, index) => (
                     <a key={index} href={project.url} target="_blank" className="flex flex-row w-full xl:h-45 h-35 items-start justify-between bg-transparent xl:p-5 p-3 hover:bg-white/5 hover:scale-102 transition-all duration-300 xl:rounded-xl group rounded-2xl">
                         <div className="flex flex-row items-center justify-start flex-1 h-full gap-5">
                             <div className="flex flex-row items-start justify-start aspect-square h-full overflow-hidden rounded-2xl">

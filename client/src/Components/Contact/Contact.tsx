@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import { Alert, AlertTitle, AlertDescription, AlertAction } from "../../../@/components/ui/alert"
+import { Alert, AlertTitle, AlertDescription } from "../../../@/components/ui/alert"
 import projectTypeData from "./projectType.json"
 import budgetData from "./budget.json"
 import { AlertTriangle } from "lucide-react"
@@ -148,9 +148,9 @@ export default function Contact() {
                 {/* Form Error Pop-up */}
                 {error && (
                     <div 
-                        className={`fixed left-1/2 z-50 w-full max-w-xl -translate-x-1/2 px-4 transition-all duration-300 ease-in-out
+                        className={`fixed left-1/2 -translate-x-1/2 xl:translate-x-0 xl:left-auto md:right-5 z-50 w-full max-w-xl px-4 transition-all duration-300 ease-in-out
                         ${isVisible 
-                            ? "top-4 opacity-100 scale-100" 
+                            ? "top-24 xl:top-4 opacity-100 scale-100"
                             : "-top-20 opacity-0 scale-95 pointer-events-none"
                         }`}
                     >

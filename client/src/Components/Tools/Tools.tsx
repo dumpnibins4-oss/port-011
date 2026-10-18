@@ -2,7 +2,6 @@ import { useState, useEffect } from "react"
 import toolsData from "./Tools.json"
 
 export default function Tools() {
-    const [isMobile, setIsMobile] = useState(false)
     const [visibleCount, setVisibleCount] = useState(6)
     
     // Tracks the item count limit before the user presses "View More"
@@ -12,7 +11,6 @@ export default function Tools() {
     useEffect(() => {
         const handleResize = () => {
             const mobile = window.innerWidth < 768
-            setIsMobile(mobile)
             
             // Only update counts if the user hasn't expanded the list yet
             if (visibleCount <= 6) {

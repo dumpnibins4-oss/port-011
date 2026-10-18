@@ -13,7 +13,7 @@
         "projectImage": "./assets/lrn-logo.jpg",
         "ProjectName": "A.C.T.S.",
         "type": "Custom Internal System",
-        "url": "",
+        "url": "https://la-rose-noire.com/",
         "restricted": true
     },
 
@@ -21,7 +21,7 @@
         "projectImage": "./assets/lrn-logo.jpg",
         "ProjectName": "I.T.M.S.",
         "type": "Custom Internal System",
-        "url": "",
+        "url": "https://la-rose-noire.com/",
         "restricted": true
     }
 ]
